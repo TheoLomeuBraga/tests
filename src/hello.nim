@@ -1,20 +1,16 @@
-import std/strformat
-import std/terminal
-import std/strutils
+
 
 echo "HELLO"
 
-type Person = object
-    name: string
-    age: Natural
+import person
 
 var you: Person
 
-echo "what is your name ?"
-you.name = readLine(stdin)
+you.get_data()
 
-echo "what is your age ?"
-you.age = parseInt(readLine(stdin))
+you.identfy()
 
 
-echo "hello " , you.name , " with " , you.age , " years"
+import hello_math
+
+echo "hello math " , hello_math_do_math(2,2)
