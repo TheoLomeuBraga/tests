@@ -1,4 +1,6 @@
-{.compile: "src/bindings/good_manners.cpp".}
-{.passC: "-std=c++11".}
+
+{.passC: "-std=c++11 -Isrc/bindings".}
+{.compile: "good_manners.cpp".}
+
 
 
